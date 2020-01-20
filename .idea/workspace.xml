@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6430b827-7df6-45ea-a8fa-aea14cd258a3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="root@123.57.54.10" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="root@123.57.54.10" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Vp12abUip4CCOXAWssZq8RLnB0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\git\springboot-demo\springboot-redis\src\main\java\com\simdy\web\springbootredis\controller" />
+      <recent name="E:\git\springboot-demo\springboot-redis\src\main\java\com\simdy\web\springbootredis\service" />
+      <recent name="E:\git\springboot-demo\springboot-mybatis\src\main\java\com\simdy\web\springbootmybatis" />
+      <recent name="E:\git\springboot-demo\springboot-mybatis\src\main\resources\mapper" />
+      <recent name="E:\git\springboot-demo\springboot-mybatis\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringbootShiroApplication">
+    <configuration name="SpringWebSocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-web-socket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simdy.springwebsocket.SpringWebSocketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-mybatis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simdy.web.springbootmybatis.SpringbootMybatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootRabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-rabbitmq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simdy.web.springbootrabbitmq.SpringbootRabbitmqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simdy.web.springbootredis.SpringbootRedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-shiro" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simdy.web.shiro.springbootshiro.SpringbootShiroApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootSwaggerUiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-swagger-ui" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.simdy.web.springbootswaggerui.SpringbootSwaggerUiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.16721854" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6430b827-7df6-45ea-a8fa-aea14cd258a3" name="Default Changelist" comment="" />
+      <created>1577935015952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577935015952</updated>
+      <workItem from="1577935017373" duration="6575000" />
+      <workItem from="1577952223551" duration="5919000" />
+      <workItem from="1578013504482" duration="8030000" />
+      <workItem from="1578022244862" duration="4667000" />
+      <workItem from="1578128933577" duration="1077000" />
+      <workItem from="1579484269380" duration="612000" />
+      <workItem from="1579508836805" duration="4510000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="11" y="126" width="814" height="554" key="#Assign_Data_Sources" timestamp="1577944966940">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="11" y="126" width="814" height="554" key="#Assign_Data_Sources/0.0.1280.680@0.0.1280.680" timestamp="1577944966940" />
+    <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577937097909">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1577937097909" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1579512112184">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1579512112184" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577953605624">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1577953605624" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1579513402967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1579513402967" />
+    <state width="1005" height="69" key="GridCell.Tab.0.bottom" timestamp="1579513107710">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579513107710" />
+    <state width="1005" height="69" key="GridCell.Tab.0.center" timestamp="1579513107710">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1579513107710" />
+    <state width="1005" height="69" key="GridCell.Tab.0.left" timestamp="1579513107710">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1579513107710" />
+    <state width="1005" height="69" key="GridCell.Tab.0.right" timestamp="1579513107710">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1579513107710" />
+    <state width="1005" height="69" key="GridCell.Tab.1.bottom" timestamp="1579513250876">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579513250876" />
+    <state width="1005" height="69" key="GridCell.Tab.1.center" timestamp="1579513250875">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1579513250875" />
+    <state width="1005" height="69" key="GridCell.Tab.1.left" timestamp="1579513250875">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1579513250875" />
+    <state width="1005" height="69" key="GridCell.Tab.1.right" timestamp="1579513250875">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1579513250875" />
+    <state width="1005" height="69" key="GridCell.Tab.2.bottom" timestamp="1579513107711">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579513107711" />
+    <state width="1005" height="69" key="GridCell.Tab.2.center" timestamp="1579513107711">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1579513107711" />
+    <state width="1005" height="69" key="GridCell.Tab.2.left" timestamp="1579513107710">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1579513107710" />
+    <state width="1005" height="69" key="GridCell.Tab.2.right" timestamp="1579513107711">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1005" height="69" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1579513107711" />
+    <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1577936727337">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1577936727337" />
+    <state x="254" y="45" width="773" height="590" key="find.popup" timestamp="1579512869631">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="254" y="45" width="773" height="590" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1579512869631" />
+    <state x="179" y="115" width="917" height="565" key="new project wizard" timestamp="1579508932393">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="179" y="115" width="917" height="565" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1579508932393" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1577957161552">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1577957161552" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1579511872770">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1579511872770" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/simdy/web/shiro/springbootshiro/shiro/JwtFilter.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/simdy/web/shiro/springbootshiro/shiro/JwtFilter.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/simdy/web/shiro/springbootshiro/shiro/JwtFilter.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/simdy/web/shiro/springbootshiro/shiro/JwtFilter.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/simdy/web/shiro/springbootshiro/shiro/JwtFilter.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/simdy/web/shiro/springbootshiro/shiro/JwtFilter.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/simdy/web/shiro/springbootshiro/shiro/JwtFilter.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/springboot_demo$SpringWebSocketApplication.ic" NAME="SpringWebSocketApplication Coverage Results" MODIFIED="1577957212222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/springboot_demo$SpringbootSwaggerUiApplication.ic" NAME="SpringbootSwaggerUiApplication Coverage Results" MODIFIED="1577945210436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

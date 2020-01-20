@@ -1,0 +1,17 @@
+spring:
+  cache:
+    redis:
+      time-to-live: 60s
+    type: redis
+  redis:
+    host: 123.57.54.10
+    port: 6379
+    password: be99e2010e3d4a9c7d79cb72879187bd
+    timeout: 10000
+    lettuce:
+      pool:
+        max-idle: 10
+        max-active: 10
+        min-idle: 5
+        max-wait: 10000
+    database: 0
