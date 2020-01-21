@@ -8,9 +8,12 @@ import org.apache.shiro.authz.annotation.Logical;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.UnsupportedEncodingException;
+
+import static com.simdy.web.shiro.springbootshiro.shiro.JwtUtil.createToken;
 
 /**
  * @Author: Simdy
@@ -26,16 +29,28 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private RedisTemplate redisTemplate;
+
     @PostMapping("/login")
     @ApiOperation(value = "用户登录", notes = "登录--不进行拦截")
     public Msg login(String username,String password){
-        String realPassword = userService.getPassword(username);
-        if (realPassword == null) {
-            return Msg.fail().add("info","用户名错误");
-        } else if (!realPassword.equals(password)) {
-            return Msg.fail().add("info","密码错误");
+        Integer times = (Integer)redisTemplate.opsForHash().get("passwordError", username);
+        if(times!=null && times == 5){
+            userService.forbidden(username);
+        }
+        if (!userService.auth(username,password)) {
+            if((times)!=null){
+                redisTemplate.opsForHash().put("passwordError",username,++times);
+            }else {
+                redisTemplate.opsForHash().put("passwordError",username,1);
+            }
+            return Msg.fail().add("info","用户名错误或密码错误");
         } else {
-            return Msg.success().add("token", JwtUtil.createToken(username));
+            redisTemplate.opsForHash().put("passwordError",username,0);
+            String token = JwtUtil.createToken(username);
+            redisTemplate.opsForHash().put("token",username,token);
+            return Msg.success().add("token",token);
         }
     }
 

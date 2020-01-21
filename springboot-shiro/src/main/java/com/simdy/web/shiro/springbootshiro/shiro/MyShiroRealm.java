@@ -10,6 +10,8 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -30,6 +32,8 @@ public class MyShiroRealm extends AuthorizingRealm {
     @Autowired
     private UserService userService;
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
     /**
      * 必须重写此方法，不然会报错
      */
@@ -43,7 +47,7 @@ public class MyShiroRealm extends AuthorizingRealm {
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
-        System.out.println("————身份认证方法————");
+        logger.info("————身份授权————");
         String token = (String) authenticationToken.getCredentials();
         // 解密获得username，用于和数据库进行对比
         String username = JwtUtil.getUsername(token);
@@ -51,17 +55,17 @@ public class MyShiroRealm extends AuthorizingRealm {
             throw new AuthenticationException("token认证失败！");
         }
 
-        /* 以下数据库查询可根据实际情况，可以不必再次查询，这里我两次查询会很耗资源
-         * 我这里增加两次查询是因为考虑到数据库管理员可能自行更改数据库中的用户信息
-         */
-        String password = userService.getPassword(username);
-        if (password == null) {
-            throw new AuthenticationException("该用户不存在！");
-        }
-        int ban = userService.checkUserBanStatus(username);
-        if (ban == 1) {
-            throw new AuthenticationException("该用户已被封号！");
-        }
+//        /* 以下数据库查询可根据实际情况，可以不必再次查询，这里我两次查询会很耗资源
+//         * 我这里增加两次查询是因为考虑到数据库管理员可能自行更改数据库中的用户信息
+//         */
+//        String password = userService.getPassword(username);
+//        if (password == null) {
+//            throw new AuthenticationException("用户名输入错误或用户不存在！");
+//        }
+//        int ban = userService.checkUserBanStatus(username);
+//        if (ban == 1) {
+//            throw new AuthenticationException("该用户已被封号！");
+//        }
         return new SimpleAuthenticationInfo(token, token, "MyRealm");
     }
 
@@ -70,7 +74,7 @@ public class MyShiroRealm extends AuthorizingRealm {
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-        System.out.println("————权限认证————");
+       logger.info("————权限认证————");
         String username = JwtUtil.getUsername(principals.toString());
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
         //获得该用户角色

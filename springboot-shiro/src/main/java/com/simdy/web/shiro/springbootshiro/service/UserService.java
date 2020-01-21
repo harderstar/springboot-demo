@@ -19,6 +19,10 @@ public interface UserService {
     @Cacheable(key = "'userName'.concat(#userName)")
     String getPassword(String userName);
 
+    boolean forbidden(String username);
+
+    boolean auth(String username,String password);
+
     int checkUserBanStatus(String username);
 
     String getRole(String username);

@@ -5,6 +5,8 @@ import org.apache.shiro.authz.UnauthorizedException;
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -25,6 +27,8 @@ import java.net.URLEncoder;
 public class JwtFilter extends BasicHttpAuthenticationFilter {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    @Autowired
+    private RedisTemplate redisTemplate;
     /**
      * 如果带有 token，则对 token 进行检查，否则直接通过
      */
@@ -53,7 +57,11 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
     protected boolean isLoginAttempt(ServletRequest request, ServletResponse response) {
         HttpServletRequest req = (HttpServletRequest) request;
         String token = req.getHeader("token");
-        return token != null;
+//        if(token == null || redisTemplate.opsForHash().get("token", JwtUtil.getUsername(token))==null)
+//            return false;
+        if(token == null)
+            return false;
+        return true;
     }
 
     /**

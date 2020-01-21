@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Modified By:
  * @Description:
  */
-@RestControllerAdvice
+//@RestControllerAdvice
 public class ExceptionController {
 
     // 捕捉shiro的异常

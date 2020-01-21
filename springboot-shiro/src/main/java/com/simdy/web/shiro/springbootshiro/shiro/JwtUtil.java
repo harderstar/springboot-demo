@@ -13,39 +13,38 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.interfaces.DecodedJWT;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
 
-/**
- * @author Mr.Li
- * @create 2018-07-12 14:23
- * @desc JWT工具类
- **/
+
 public class JwtUtil {
 
     // 过期时间 24 小时
     private static final long EXPIRE_TIME = 60 * 24 * 60 * 1000;
     // 密钥
-    private static final String SECRET = "chen";
+    private static final String SECRET = "simdy";
 
     /**
      * 生成 token
      */
     public static String createToken(String username) {
 //        try {
-            Date date = new Date(System.currentTimeMillis() + EXPIRE_TIME);
-            Algorithm algorithm = Algorithm.HMAC256(SECRET);
-            // 附带username信息
-            return JWT.create()
-                    .withClaim("username", username)
-                    //到期时间
-                    .withExpiresAt(date)
-                    //创建一个新的JWT，并使用给定的算法进行标记
-                    .sign(algorithm);
+        Date date = new Date(System.currentTimeMillis() + EXPIRE_TIME);
+        Algorithm algorithm = Algorithm.HMAC256(SECRET);
+        // 附带username信息
+        String token = JWT.create()
+                .withClaim("username", username)
+                //到期时间
+                .withExpiresAt(date)
+                //创建一个新的JWT，并使用给定的算法进行标记
+                .sign(algorithm);
 //        } catch (UnsupportedEncodingException e) {
 //            return null;
 //        }
+        return token;
     }
 
     /**
@@ -53,6 +52,7 @@ public class JwtUtil {
      */
     public static boolean verify(String token, String username) {
         try {
+
             Algorithm algorithm = Algorithm.HMAC256(SECRET);
             //在token中附带了username信息
             JWTVerifier verifier = JWT.require(algorithm)
